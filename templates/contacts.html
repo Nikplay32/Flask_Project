@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/contacts.css">
+    <title>Kontakti - ZCars.lv</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+    <link rel="manifest" href="static/img/site.webmanifest">
+    <link rel="mask-icon" href="static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div id="popup_login" style="display: none;">
+        <form id="login_form">
+            <h1>Log in</h1>
+            <div class="login_first_line">
+                <label for="uname"><b>Username</b></label>
+                <input class="input_login" type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input class="input_login" type="password" placeholder="Enter Password" name="psw" required>
+                <label>
+                    <input id="rememberMe_check" type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button class="login_button" type="submit">Login</button>
+            </div>
+            <div class="login_second_line">
+                <button class="login_button" type="button" id="cancel_btn">Cancel</button>
+            </div>
+        </form>>
+    </div>
+    
+    <div class="top_rectangle">
+        <div class="left_side">
+            <a href="./"><img src="static/img/Logo.png" id="logo"></a>
+            <a href="./" id="title">ZCARS Autonoma</a>
+        </div>
+        <div class="right_side">
+            <div class="search_string">
+                <img src="static/img/search.png" id="loupe">
+                <input id="search" type="text" placeholder="Meklēt">
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div class="tabs">
+            <ul>
+                <li><a href="./">Sākumlapa</a></li>
+                <li><a href="#">Automašīnas</a></li>
+                <li><a href="#">Pakalpojumi</a></li>
+                <li><a href="#">Jūsu rezervācijas</a></li>
+                <li><a href="#">Kontakti</a></li>
+            </ul>
+        </div>
+        <div class="login_buttons">
+            <a id="log_in" href="#">log in</a>
+            <a>|</a>
+            <a id="sign_in" href="#">sign in</a>
+        </div>
+    </div>
+
+    <div class="main_content">
+
+        <div id="requisites">
+            <h2>Rekvizīti</h2>
+            <p>SIA, SOL 1</p>
+            <p>Reģ.nr.: 40007483628</p>
+            <p style="margin-bottom: 30px;">PVN Reģ.nr.: LV40007483628</p>
+            <p>Juridiskā adrese:</p>
+            <p style="margin-bottom: 30px;">Katrīnas dambis 29, Rīga, LV-1045, Latvija</p>
+            <p>Banka: A/S “Swedbank”</p>
+            <p>KONTS: LV13HABA0551084673964</p>
+            <p>BIC/SWIFT: HABALV15</p>
+        </div>
+        <div id="contact_information">
+            <h2>Kontaktinformācija</h2>
+            <p>Tālrunis: +371 21345678</p>
+            <p>E-pasts: Zcars@gmail.com</p>
+            <p>Mājas lapa: www.zcars.lv</p>
+            <h3>Darba laiks:</h3>
+            <p>Pirmdien: 8:00-18:00</p>
+            <p>Otrdien: 8:00-18:00</p>
+            <p>Trešdien: 8:00-18:00</p>
+            <p>Cturtdien: 8:00-18:00</p>
+            <p>Piektdien: 8:00-18:00</p>
+            <p>Sestdien: 9:00-15:00</p>
+            <p>Svētdien: 9:00-15:00</p>
+        </div>
+        <div id="to_contact_us">
+            <h2>Saziņai ar mums</h2>
+            <form>
+                <label for="fname">Vārds, uzvārds *</label>
+                <input class="inf_input" type="text" id="fname" name="firstname">
+                <label for="lname">E-pasta adrese *</label>
+                <input class="inf_input" type="text" id="lname" name="lastname">
+                <label for="subject">Ziņa</label>
+                <textarea class="inf_input" name="subject" style="height:200px"></textarea>
+                <input id="send_message_btn" type="submit" value="Sūtīt ziņu">
+              </form>
+        </div>
+
+    </div>
+
+    <div id="white_line"></div>
+
+    <div class="bottom_rectangle">
+        <div class="information_about_us">
+            <div class="column_1">
+                <a>Tālr.: +371 21345678</a>
+            </div>
+            <div class="column_2">
+                <a href="./"><img src="static/img/Logo.png" id="logo2"></a>
+                <a>&copy; 2021 ZCars All Rights Reserved.</a>
+                <a>Katrīnas dambis 29, Ziemeļu rajons, Rīga, LV-1045</a>
+            </div>
+            <div class="column_3">
+                <a>Email: Zcars@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

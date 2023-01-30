@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home_page.css">
+    <title>Autonoma Rīgā - ZCars.lv</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+    <link rel="manifest" href="static/img/site.webmanifest">
+    <link rel="mask-icon" href="static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div id="popup_login" style="display: none;">
+        <form id="login_form">
+            <h1>Log in</h1>
+            <div class="login_first_line">
+                <label for="uname"><b>Username</b></label>
+                <input class="input_login" type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input class="input_login" type="password" placeholder="Enter Password" name="psw" required>
+                <label>
+                    <input id="rememberMe_check" type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button class="login_button" type="submit">Login</button>
+            </div>
+            <div class="login_second_line">
+                <button class="login_button" type="button" id="cancel_btn">Cancel</button>
+            </div>
+        </form>>
+    </div>
+    
+    <div class="top_rectangle">
+        <div class="left_side">
+            <a href="./"><img src="static/img/Logo.png" id="logo"></a>
+            <a href="./" id="title">ZCARS Autonoma</a>
+        </div>
+        <div class="right_side">
+            <div class="search_string">
+                <img src="static/img/search.png" id="loupe">
+                <input id="search" type="text" placeholder="Meklēt">
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div class="tabs">
+            <ul>
+                <li><a href="./">Sākumlapa</a></li>
+                <li><a href="#">Automašīnas</a></li>
+                <li><a href="#">Pakalpojumi</a></li>
+                <li><a href="#">Jūsu rezervācijas</a></li>
+                <li><a href="./contacts">Kontakti</a></li>
+            </ul>
+        </div>
+        <div class="login_buttons">
+            <a id="log_in" href="#">log in</a>
+            <a>|</a>
+            <a id="sign_in" href="#">sign in</a>
+        </div>
+    </div>
+
+    <div class="main_content">
+
+        <div class="background_image" style="background-image: url(static/img/image_car.png);">
+            <div class="reservation">
+                <h2>Rezervācija</h2>
+                <div class="information_input">
+                    <div class="reserv_first_line">
+                        <p>Saņemšanas datums / laiks</p>
+                        <input class="date_input" type="date" max="2022-03-17" min="2022-02-17">
+                        <select id="time_input_1">
+                            <option value="00:00">00:00</option>
+                            <option value="00:30">00:30</option>
+                            <option value="01:00">01:00</option>
+                            <option value="01:30">01:30</option>
+                            <option value="02:00">02:00</option>
+                            <option value="02:30">02:30</option>
+                            <option value="03:00">03:00</option>
+                            <option value="03:30">03:30</option>
+                            <option value="04:00">04:00</option>
+                            <option value="04:30">04:30</option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                        <p>Saņemšanas vieta</p>
+                        <select class="place_input">
+                            <option value="Izvēlieties vietu:">Izvēlieties vietu:</option>
+                        </select>
+                    </div>
+                    <div class="reserv_second_line">
+                        <p>Nodošanas datums / laiks</p>
+                        <input class="date_input" type="date" max="2022-07-17" min="2022-02-17">
+                        <select id="time_input_2">
+                            <option value="00:00">00:00</option>
+                            <option value="00:30">00:30</option>
+                            <option value="01:00">01:00</option>
+                            <option value="01:30">01:30</option>
+                            <option value="02:00">02:00</option>
+                            <option value="02:30">02:30</option>
+                            <option value="03:00">03:00</option>
+                            <option value="03:30">03:30</option>
+                            <option value="04:00">04:00</option>
+                            <option value="04:30">04:30</option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                        <p>Nodošanas vieta</p>
+                        <select class="place_input">
+                            <option value="Izvēlieties vietu:">Izvēlieties vietu:</option>
+                        </select>
+                    </div>
+                    <div id="reserv_button_line">
+                        <button id="continueButton" type="button">Turpināt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="white_background">
+            <h3>Autonoma Rīgā</h3>
+            <p>ZCars auto nomas darbības galvenais motīvs ir sniegt kvalitatīvus auto nomas pakalpojumus, piedāvājot klientiem piemērotāko un konkurētspējīgāko cenu. Ņemot vērā ZCars biznesa optimizācijas modeli, spējam piedāvāt vienas no zemākajām cenām jaunu auto nomas pakalpojumiem Rīgas centrā, vienlaikus saglabājot nevainojamu korporatīvās sociālās atbildības politiku klientu apkalpošanā, ņemot vērā labāko praksi patērētāju tiesību aizsardzības jomā saskaņā ar Patērētāju tiesību aizsardzības centra un Latvijas Auto nomas asociācijas ieteikumiem.</p>
+            <p>Visām ZCars auto nomas automašīnām tiks nodrošināta diennakts bezmaksas tehniskā palīdzība uz ceļa Eiropas Savienības un Eiropas Ekonomikas zonas dalībvalstīs, t.sk. bezmaksas automašīnas evakuācija uz tuvāko autorizēto servisu. Visu automašīnu apkopi ZCars auto nomā veic autorizēts serviss.</p>
+            <p>Sekojot līdzi autobūves tehnoloģiju attīstībai pasaulē, savu ieguldījumu vēlas sniegt arī ZCars, popularizējot un veicinot videi draudzīgu transportlīdzekļu izmantošanu. Viens no ZCars mērķiem ir ne pārāk tālā nākotnē auto nomas segmentā pāriet tikai uz elektriskajiem un hibrīdautomobiļiem.</p>
+            <p>Šobrīd, izmantojot ZCars tiešsaistes rezervācijas sistēmu, sniedzam auto nomas pakalpojumus Baltijas valstīs, kā arī, izskatot katru individuālo klienta pieprasījumu atsevišķi, arī citās Eiropas Savienības un Eiropas Ekonomikas zonas dalībvalstīs.</p>
+        </div>
+
+    </div>
+
+    <div id="white_line"></div>
+
+    <div class="bottom_rectangle">
+        <div class="information_about_us">
+            <div class="column_1">
+                <a>Tālr.: +371 21345678</a>
+            </div>
+            <div class="column_2">
+                <a href="./"><img src="static/img/Logo.png" id="logo2"></a>
+                <a>&copy; 2021 ZCars All Rights Reserved.</a>
+                <a>Katrīnas dambis 29, Ziemeļu rajons, Rīga, LV-1045</a>
+            </div>
+            <div class="column_3">
+                <a>Email: Zcars@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/home_page.js"></script>
+
+</body>
+</html>
